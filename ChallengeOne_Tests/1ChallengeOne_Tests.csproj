@@ -49,11 +49,21 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="MenuItemRepoTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\1ChallengeOne_Repo\1ChallengeOne_Repo.csproj">
+      <Project>{7490d03a-4755-4c38-9972-d7ccb7965dc7}</Project>
+      <Name>1ChallengeOne_Repo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChallengeFour_Console\4ChallengeFour_Console.csproj">
+      <Project>{c857f83c-f087-4186-89a8-26b41f8bc514}</Project>
+      <Name>4ChallengeFour_Console</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

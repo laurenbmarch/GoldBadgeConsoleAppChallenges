@@ -11,10 +11,15 @@ namespace _1ChallengeOne_Repo
         private List<MenuItem> _listOfMenuItems = new List<MenuItem>();
         private int _countForMealNumber = 0;
         //Create
-        public void AddMenuItemToList(MenuItem menuItem)
+        public bool AddMenuItemToList(MenuItem menuItem)
         {
+            if (menuItem is null)
+            {
+                return false;
+            }
             menuItem.MealNumber = ++_countForMealNumber;
             _listOfMenuItems.Add(menuItem);
+            return true;
         }
         //Read
         public List<MenuItem> GetMenuList()
