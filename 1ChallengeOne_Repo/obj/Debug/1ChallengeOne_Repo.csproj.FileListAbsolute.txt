@@ -1,0 +1,6 @@
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\1ChallengeOne_Repo\bin\Debug\1ChallengeOne_Repo.dll
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\1ChallengeOne_Repo\bin\Debug\1ChallengeOne_Repo.pdb
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\1ChallengeOne_Repo\obj\Debug\1ChallengeOne_Repo.csproj.AssemblyReference.cache
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\1ChallengeOne_Repo\obj\Debug\1ChallengeOne_Repo.csproj.CoreCompileInputs.cache
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\1ChallengeOne_Repo\obj\Debug\1ChallengeOne_Repo.dll
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\1ChallengeOne_Repo\obj\Debug\1ChallengeOne_Repo.pdb

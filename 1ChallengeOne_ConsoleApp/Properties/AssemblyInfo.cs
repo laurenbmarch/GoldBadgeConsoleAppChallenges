@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ChallengeOne_Console")]
+[assembly: AssemblyTitle("1ChallengeOne_ConsoleApp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ChallengeOne_Console")]
+[assembly: AssemblyProduct("1ChallengeOne_ConsoleApp")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2569d910-cf79-4a02-9935-1f5fa306f1ab")]
+[assembly: Guid("db684a66-725f-4e0d-8ee1-b9185579675a")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,0 +1,2 @@
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\GoldBadgeAppChallenges\obj\Debug\1ChallengeOne_Repository.csproj.AssemblyReference.cache
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\GoldBadgeAppChallenges\obj\Debug\1ChallengeOne_Repository.csproj.CoreCompileInputs.cache

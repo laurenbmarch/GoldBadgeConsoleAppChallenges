@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _ChallengeOne_Repository
+namespace _1ChallengeOne_Repo
 {
     public class MenuItem
     {
@@ -22,6 +22,5 @@ namespace _ChallengeOne_Repository
             Description = description;
             ListOfIngredientsInMeal = listOfIngredients;
         }
-        
     }
 }

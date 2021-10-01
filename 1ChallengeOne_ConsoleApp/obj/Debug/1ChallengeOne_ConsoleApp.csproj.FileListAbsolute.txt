@@ -1,0 +1,1 @@
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\1ChallengeOne_ConsoleApp\obj\Debug\1ChallengeOne_ConsoleApp.csproj.CoreCompileInputs.cache
