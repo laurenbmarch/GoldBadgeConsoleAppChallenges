@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChallengeOne_Console
+namespace ChallengeFour_Console
 {
-    public class Program
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }

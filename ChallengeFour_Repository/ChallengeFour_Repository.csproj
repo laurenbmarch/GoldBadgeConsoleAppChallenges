@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A77F46CB-93B0-48B8-9B97-4E54E0C7C5E5}</ProjectGuid>
+    <ProjectGuid>{6293BD4C-AF55-4ED7-B1AD-447285A73C77}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GoldBadgeAppChallenges</RootNamespace>
-    <AssemblyName>GoldBadgeAppChallenges</AssemblyName>
+    <RootNamespace>ChallengeFour_Repository</RootNamespace>
+    <AssemblyName>ChallengeFour_Repository</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

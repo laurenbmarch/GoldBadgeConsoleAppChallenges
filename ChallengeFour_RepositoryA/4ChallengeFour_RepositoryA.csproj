@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>2569d910-cf79-4a02-9935-1f5fa306f1ab</ProjectGuid>
+    <ProjectGuid>e4234f3b-27a8-4548-b831-d3d5ffa751aa</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ChallengeOne_Console</RootNamespace>
-    <AssemblyName>ChallengeOne_Console</AssemblyName>
+    <RootNamespace>ChallengeFour_RepositoryA</RootNamespace>
+    <AssemblyName>ChallengeFour_RepositoryA</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

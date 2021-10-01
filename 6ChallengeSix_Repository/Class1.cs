@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChallengeOne_Console
+namespace _6ChallengeSix_Repository
 {
-    public class Program
+    public class Class1
     {
     }
 }
