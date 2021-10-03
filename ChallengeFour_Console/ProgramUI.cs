@@ -13,8 +13,96 @@ namespace ChallengeFour_Console
         private OutingRepo _outingRepo = new OutingRepo();
         public void Run()
         {
-        //Menu
-        
+            SeedMenuItems();
+            Menu();
+
         }
+        //Menu
+        private void Menu()
+        {
+            bool keepRunning = true;
+            while (keepRunning)
+            {
+                Console.WriteLine("Select an option: \n" +
+                    "\t1. View All Outings \n" +
+                    "\t2. Add A New Outing \n" +
+                    "\t3. Display Combined Costs for All Outings \n" +
+                    "\t4. Display Costs by Type of Event" +
+                    "\t5. Exit");
+
+                string input = Console.ReadLine();
+
+                switch (input)
+                {
+                    case "1":
+                        DisplayAllOutings();
+                        break;
+                    case "2":
+                        CreateNewOuting();
+                        break;
+                    case "3":
+                        DisplayTotalCombinedCosts();
+                        break;
+                    case "4":
+                        DisplayCostsByType();
+                        break;
+                    case "5":
+                        Console.WriteLine("Exiting Now");
+                        keepRunning = false;
+                        break;
+                    default:
+                        Console.WriteLine("Please enter a valid number (1, 2, 3, 4, or 5)");
+                        break;
+                }
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey();
+                Console.Clear();
+            }
+        }
+        //Display List of All Outings
+        private void DisplayAllOutings()
+        {
+            Console.Clear();
+            List<Outing> listOfOutings = _outingRepo.GetAllOutings();
+            foreach (Outing outing in listOfOutings)
+            {
+                Console.WriteLine($"Date: {outing.DateOfEvent}\n" +
+                    $"Event Type: {outing.TypeOfEvent}\n" +
+                    $"Number of Attendees: {outing.NumberOfAttendees}\n" +
+                    $"Cost Per Person: {outing.CostPerPerson}\n" +
+                    $"Total Cost for the Event: {outing.TotalCostForEvent}\n\n");
+            }
+
+        }
+        //Create New Outing
+        private void CreateNewOuting()
+        {
+            Console.Clear();
+            Outing outing = new Outing();
+            
+            //Date of Outing
+            Console.WriteLine("Enter the date of the outing (ex: 11/23/2020): ");
+            outing.DateOfEvent = DateTime.Parse(Console.ReadLine());
+            
+            //Type of Event
+            Console.WriteLine("What was the type of event? (Enter 1, 2, 3, or 4): ");
+            int eventChoice = int.Parse(Console.ReadLine());
+            outing.TypeOfEvent = (EventType)eventChoice;
+
+            //Number of Attendees
+            Console.WriteLine("Enter the total number of attendees: ");
+            outing.NumberOfAttendees = int.Parse(Console.ReadLine());
+
+            //Cost per person
+            Console.WriteLine("Enter the cost per person (ex: 14.99)");
+            outing.CostPerPerson = decimal.Parse(Console.ReadLine());
+
+            //Total Cost
+            Console.WriteLine("Enter the total cost of the event (ex: 499.99)");
+            outing.TotalCostForEvent = decimal.Parse(Console.ReadLine());
+
+            _outingRepo.AddOutingToList(outing);
+        }
+
     }
 }

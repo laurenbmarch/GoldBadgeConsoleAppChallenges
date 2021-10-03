@@ -11,7 +11,7 @@ namespace ChallengeFour_RepositoryA
         private List<Outing> _listOfOutings = new List<Outing>();
         
         //Display List of All Outings
-        public List<Outing> DisplayAllOutings()
+        public List<Outing> GetAllOutings()
         {
             return _listOfOutings;
         }
