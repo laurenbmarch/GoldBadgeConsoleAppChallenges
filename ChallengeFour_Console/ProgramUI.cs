@@ -103,6 +103,25 @@ namespace ChallengeFour_Console
 
             _outingRepo.AddOutingToList(outing);
         }
+        //Display Total Combined Costs
+        private void DisplayTotalCombinedCosts()
+        {
+            Console.Clear();
+            decimal totalCost =_outingRepo.AddAllOutingCosts();
+            Console.WriteLine($"Here is the total combined costs of all outings:{totalCost}\n\n");
 
+            //Console.WriteLine("Would you like to view the combined costs by year? (yes/no):");
+        }
+        //Display Costs By Type
+        private void DisplayCostsByType()
+        {
+            Console.WriteLine("Which type of event would you like to see total costs:\n" +
+                "1. Golf \n" +
+                "2. Bowling \n" +
+                "3. Amusement Park \n" +
+                "4. Concert");
+            
+            
+        }
     }
 }
