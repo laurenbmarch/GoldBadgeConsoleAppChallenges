@@ -27,7 +27,7 @@ namespace ChallengeFour_Console
                     "\t1. View All Outings \n" +
                     "\t2. Add A New Outing \n" +
                     "\t3. Display Combined Costs for All Outings \n" +
-                    "\t4. Display Costs by Type of Event" +
+                    "\t4. Display Costs by Type of Event\n" +
                     "\t5. Exit");
 
                 string input = Console.ReadLine();
@@ -85,7 +85,11 @@ namespace ChallengeFour_Console
             outing.DateOfEvent = DateTime.Parse(Console.ReadLine());
             
             //Type of Event
-            Console.WriteLine("What was the type of event? (Enter 1, 2, 3, or 4): ");
+            Console.WriteLine("What was the type of event? (Enter 1, 2, 3, or 4): \n" +
+                "1. Golf \n" +
+                "2. Bowling \n" +
+                "3. Amusement Park \n" +
+                "4. Concert");
             int eventChoice = int.Parse(Console.ReadLine());
             outing.TypeOfEvent = (EventType)eventChoice;
 
@@ -115,13 +119,26 @@ namespace ChallengeFour_Console
         //Display Costs By Type
         private void DisplayCostsByType()
         {
+            Console.Clear();
             Console.WriteLine("Which type of event would you like to see total costs:\n" +
                 "1. Golf \n" +
                 "2. Bowling \n" +
                 "3. Amusement Park \n" +
                 "4. Concert");
-            
-            
+            int eventChoice = int.Parse(Console.ReadLine());
+            EventType typeOfEvent = (EventType)eventChoice;
+            decimal totalCostOfEventType = _outingRepo.AddCostsByType(typeOfEvent);
+            Console.WriteLine($"The total cost of {typeOfEvent} events is:{totalCostOfEventType}");
+
+        }
+        //Seed Data
+        private void SeedMenuItems()
+        {
+            Outing outingExampleOne = new Outing(EventType.Golf, 30, new DateTime(2021, 5, 16), 59.99m, 1799.70m);
+            Outing outingExampleTwo = new Outing(EventType.Bowling, 40, new DateTime(2021, 10, 1), 25.99m, 1039.60m);
+
+            _outingRepo.AddOutingToList(outingExampleOne);
+            _outingRepo.AddOutingToList(outingExampleTwo);
         }
     }
 }
