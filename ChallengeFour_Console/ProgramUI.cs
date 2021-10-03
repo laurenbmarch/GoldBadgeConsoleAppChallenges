@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChallengeFour_Console
 {
-    class Program
+    class Class1
     {
-        static void Main(string[] args)
-        {
-            ProgramUI program = new ProgramUI();
-            program.Run();
-        }
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\Challenge6_Console\bin\Debug\Challenge6_Console.exe.config
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\Challenge6_Console\bin\Debug\Challenge6_Console.exe
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\Challenge6_Console\bin\Debug\Challenge6_Console.pdb
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\Challenge6_Console\obj\Debug\6ChallengeSix_Console.csproj.AssemblyReference.cache
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\Challenge6_Console\obj\Debug\6ChallengeSix_Console.csproj.CoreCompileInputs.cache
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\Challenge6_Console\obj\Debug\Challenge6_Console.exe
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\Challenge6_Console\obj\Debug\Challenge6_Console.pdb
