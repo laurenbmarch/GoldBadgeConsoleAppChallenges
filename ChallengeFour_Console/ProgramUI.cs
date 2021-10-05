@@ -66,7 +66,7 @@ namespace ChallengeFour_Console
             List<Outing> listOfOutings = _outingRepo.GetAllOutings();
             foreach (Outing outing in listOfOutings)
             {
-                Console.WriteLine($"Date: {outing.DateOfEvent.Date}\n" +
+                Console.WriteLine($"Date: {outing.DateOfEvent}\n" +
                     $"Event Type: {outing.TypeOfEvent}\n" +
                     $"Number of Attendees: {outing.NumberOfAttendees}\n" +
                     $"Cost Per Person: {outing.CostPerPerson}\n" +

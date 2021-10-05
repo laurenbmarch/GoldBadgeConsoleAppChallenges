@@ -1,14 +1,13 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using ChallengeFour_RepositoryA;
 
 namespace ChallengeFour_Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class OutingRepoTests
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-        }
+        private readonly OutingRepo _repo = new OutingRepo();
+        [TestInitialize]
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge6_Console
 {
-    class Class1
+    class ProgramUI
     {
     }
 }

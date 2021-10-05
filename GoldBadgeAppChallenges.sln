@@ -11,11 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4ChallengeFour_Tests", "Cha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4ChallengeFour_RepositoryA", "ChallengeFour_RepositoryA\4ChallengeFour_RepositoryA.csproj", "{E4234F3B-27A8-4548-B831-D3D5FFA751AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6ChallengeSix_Console", "Challenge6_Console\6ChallengeSix_Console.csproj", "{C0884219-5C56-410B-A36F-EA8167E71B53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3ChallengeThree_Console", "Challenge6_Console\3ChallengeThree_Console.csproj", "{C0884219-5C56-410B-A36F-EA8167E71B53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6ChallengeSix_Repository", "6ChallengeSix_Repository\6ChallengeSix_Repository.csproj", "{BE4408F4-D10C-48BE-A0A9-AC4F890ADEBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3ChallengeThree_Repository", "6ChallengeSix_Repository\3ChallengeThree_Repository.csproj", "{BE4408F4-D10C-48BE-A0A9-AC4F890ADEBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6ChallengeSix_Tests", "6ChallengeSix_Tests\6ChallengeSix_Tests.csproj", "{B264E758-F484-4D7A-B1C6-A234D4469CAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3ChallengeThree_Tests", "6ChallengeSix_Tests\3ChallengeThree_Tests.csproj", "{B264E758-F484-4D7A-B1C6-A234D4469CAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1ChallengeOne_Console", "1ChallengeOne_ConsoleApp\1ChallengeOne_Console.csproj", "{DB684A66-725F-4E0D-8EE1-B9185579675A}"
 EndProject
