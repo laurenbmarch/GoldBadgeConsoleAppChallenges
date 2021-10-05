@@ -8,5 +8,7 @@ namespace _6ChallengeSix_Repository
 {
     class BadgeRepo
     {
+        private Dictionary<int, List<string>> dictionaryBadges = new Dictionary<int, List<string>>();
+
     }
 }
