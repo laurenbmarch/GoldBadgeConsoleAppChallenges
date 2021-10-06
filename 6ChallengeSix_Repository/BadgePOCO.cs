@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _6ChallengeSix_Repository
+namespace _3ChallengeThree_Repository
 {
     public class Badge
     {
