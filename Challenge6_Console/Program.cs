@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Challenge6_Console
+namespace Challenge3_Console
 {
     class Program
     {
