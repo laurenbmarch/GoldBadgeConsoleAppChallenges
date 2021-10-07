@@ -12,9 +12,14 @@ namespace _3ChallengeThree_Repository
 
          
         //Create a Badge
-        public void AddBadgeToDictionary(int badgeID, Badge badge)
+        public bool AddBadgeToDictionary(int badgeID, Badge badge)
         {
+            if(badge == null)
+            {
+                return false;
+            }
             _dictionaryOfBadges.Add(badgeID, badge);
+            return true;
         }
 
         //Update a Badge

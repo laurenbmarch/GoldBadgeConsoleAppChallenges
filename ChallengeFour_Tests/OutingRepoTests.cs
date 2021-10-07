@@ -13,7 +13,7 @@ namespace ChallengeFour_Tests
         {
             Outing outing = new Outing(EventType.Concert, 100, new DateTime(2021, 06, 07), 50.00m, 5000.00m);
             _repo.AddOutingToList(outing);
-        }
+        } //Question
         [TestMethod]
         public void GetAllOutings_ListDoesExist_ReturnIsNotNull() //Question
         {

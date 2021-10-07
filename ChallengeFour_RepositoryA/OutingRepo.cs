@@ -49,18 +49,5 @@ namespace ChallengeFour_RepositoryA
             decimal SumByEventType = listByType.Sum(outing => outing.TotalCostForEvent);
             return SumByEventType;
         }
-        
-        //Helper Method -- Question: Not sure if I need this
-        public Outing GetOutingByType(EventType typeOfEvent)
-        {
-            foreach(Outing outing in _listOfOutings)
-            {
-                if (outing.TypeOfEvent == typeOfEvent)
-                {
-                    return outing;
-                }
-            }
-            return null;
-        }
     }
 }
