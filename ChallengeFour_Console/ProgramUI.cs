@@ -66,7 +66,7 @@ namespace ChallengeFour_Console
             List<Outing> listOfOutings = _outingRepo.GetAllOutings();
             foreach (Outing outing in listOfOutings)
             {
-                Console.WriteLine($"Date: {outing.DateOfEvent}\n" +
+                Console.WriteLine($"Date: {(outing.DateOfEvent).ToShortDateString()}\n" +
                     $"Event Type: {outing.TypeOfEvent}\n" +
                     $"Number of Attendees: {outing.NumberOfAttendees}\n" +
                     $"Cost Per Person: {outing.CostPerPerson}\n" +
@@ -82,7 +82,7 @@ namespace ChallengeFour_Console
             
             //Date of Outing
             Console.WriteLine("Enter the date of the outing (ex: 11/23/2020): ");
-            outing.DateOfEvent = Console.ReadLine();
+            outing.DateOfEvent = DateTime.Parse(Console.ReadLine());
             
             //Type of Event
             Console.WriteLine("What was the type of event? (Enter 1, 2, 3, or 4): \n" +
@@ -101,9 +101,8 @@ namespace ChallengeFour_Console
             Console.WriteLine("Enter the cost per person (ex: 14.99)");
             outing.CostPerPerson = decimal.Parse(Console.ReadLine());
 
-            //Total Cost
-            Console.WriteLine("Enter the total cost of the event (ex: 499.99)");
-            outing.TotalCostForEvent = decimal.Parse(Console.ReadLine());
+            //Set Total Cost
+            outing.TotalCostForEvent = (outing.CostPerPerson) * (outing.NumberOfAttendees);
 
             _outingRepo.AddOutingToList(outing);
         }
@@ -114,6 +113,7 @@ namespace ChallengeFour_Console
             decimal totalCost =_outingRepo.AddAllOutingCosts();
             Console.WriteLine($"Here is the total combined costs of all outings:{totalCost}\n\n");
         }
+
         //Display Costs By Type
         private void DisplayCostsByType()
         {
@@ -124,14 +124,19 @@ namespace ChallengeFour_Console
                 $"3. Amusement Park: {_outingRepo.AddCostsByType(EventType.AmusementPark)}\n" +
                 $"4. Concert: {_outingRepo.AddCostsByType(EventType.Concert)}");
         }
+       
         //Seed Data
         private void SeedMenuItems()
         {
-            Outing outingExampleOne = new Outing(EventType.Golf, 30, "2021/ 05 / 16", 59.99m, 1799.70m);
-            Outing outingExampleTwo = new Outing(EventType.Bowling, 40, "2021/ 10/ 1", 25.99m, 1039.60m);
+            Outing outingExampleOne = new Outing(EventType.Golf, 30, new DateTime(2021, 05, 16), 50m, 1500m);
+            Outing outingExampleTwo = new Outing(EventType.Bowling, 40, new DateTime(2021, 10, 1), 20.00m, 800.00m);
+            Outing outingExampleThree = new Outing(EventType.AmusementPark, 10, new DateTime(2021, 03, 02), 40.00m, 400.00m);
+            Outing outingExampleFour = new Outing(EventType.Concert, 30, new DateTime(2021, 08, 23), 40m, 1200m); 
 
             _outingRepo.AddOutingToList(outingExampleOne);
             _outingRepo.AddOutingToList(outingExampleTwo);
+            _outingRepo.AddOutingToList(outingExampleThree);
+            _outingRepo.AddOutingToList(outingExampleFour);
         }
     }
 }

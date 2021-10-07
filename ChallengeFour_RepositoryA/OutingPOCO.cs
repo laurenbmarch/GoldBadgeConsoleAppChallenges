@@ -17,12 +17,12 @@ namespace ChallengeFour_RepositoryA
     {
         public EventType TypeOfEvent { get; set; }
         public int NumberOfAttendees { get; set; }
-        public string DateOfEvent { get; set; } = DateTime.Now.ToString("dd/MM/yyyy");
+        public DateTime DateOfEvent { get; set; } = new DateTime();
         public decimal CostPerPerson { get; set; }
         public decimal TotalCostForEvent { get; set; }
 
         public Outing() { }
-        public Outing (EventType typeOfEvent, int numOfAttendees, string eventDate, decimal costPerPerson, decimal totalCostForEvent)
+        public Outing (EventType typeOfEvent, int numOfAttendees, DateTime eventDate, decimal costPerPerson, decimal totalCostForEvent)
         {
             TypeOfEvent = typeOfEvent;
             NumberOfAttendees = numOfAttendees;
