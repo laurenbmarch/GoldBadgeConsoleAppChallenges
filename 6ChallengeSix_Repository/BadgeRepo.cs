@@ -8,17 +8,17 @@ namespace _3ChallengeThree_Repository
 {
     public class BadgeRepo
     {
-        private Dictionary<int, List<string>> _dictionaryOfBadges = new Dictionary<int, List<string>>();
+        private Dictionary<int, Badge> _dictionaryOfBadges = new Dictionary<int, Badge>();
 
-
+         
         //Create a Badge
-        public void AddBadgeToDictionary(int badgeID, List<string> doorNames)
+        public void AddBadgeToDictionary(int badgeID, Badge badge)
         {
-            _dictionaryOfBadges.Add(badgeID, doorNames);
+            _dictionaryOfBadges.Add(badgeID, badge);
         }
 
         //Update a Badge
-        public void UpdateDoors (int badgeID, List<string> listOfDoors, int addOrRemove)
+        public void UpdateDoors (int badgeID, Badge badge, int addOrRemove)
         {
             //Find the Badge By it's ID Number
             var existingBadge = GetListOfDoorsByIDNumber(badgeID);
@@ -26,19 +26,19 @@ namespace _3ChallengeThree_Repository
         }
 
         //Get Badge By ID Number
-        public List<string> GetListOfDoorsByIDNumber(int badgeIDNumber)
+        public Badge GetListOfDoorsByIDNumber(int badgeIDNumber)
         {
             if( _dictionaryOfBadges.ContainsKey(badgeIDNumber))
             {
-                var doors = _dictionaryOfBadges[badgeIDNumber];
-                return doors;
+                Badge badge = _dictionaryOfBadges[badgeIDNumber];
+                return badge;
             }
             return null;
         }
         //Get all Badge numbers and cooresponding door access
-        public Dictionary<int, List<string>> GetListOfAllBadges()
+        public Dictionary<int, Badge> GetListOfAllBadges()
         {
-            var DictionaryOfBadges = new Dictionary<int, List<string>>();
+            var DictionaryOfBadges = new Dictionary<int, Badge>();
             return DictionaryOfBadges;
 
         }
