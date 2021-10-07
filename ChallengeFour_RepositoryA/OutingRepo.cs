@@ -17,9 +17,14 @@ namespace ChallengeFour_RepositoryA
         }
        
         //Add Outing to List
-        public void AddOutingToList(Outing newOuting)
+        public bool AddOutingToList(Outing newOuting)
         {
+            if (newOuting is null)
+            {
+                return false;
+            }
             _listOfOutings.Add(newOuting);
+            return true;
         }
         
         //View Combined Costs of All Outings

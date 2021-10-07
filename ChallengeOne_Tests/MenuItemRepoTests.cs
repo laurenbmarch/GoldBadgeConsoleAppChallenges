@@ -10,11 +10,11 @@ namespace ChallengeOne_Tests
 
         private readonly MenuItemRepo _repo = new MenuItemRepo();
         [TestInitialize]
-        public void Arrange()
-        {
-            MenuItem meal = new MenuItem("Chicken Sandwich", 5.99m, "Our chicken sandwich is full of flavor and can be grilled or fried.", new List<string>() { "potatoes", "bacon", "chives" });
-            _repo.AddMenuItemToList(meal);
-        }
+        //public void Arrange()
+        //{
+        //    MenuItem meal = new MenuItem("Chicken Sandwich", 5.99m, "Our chicken sandwich is full of flavor and can be grilled or fried.", new List<string>() { "potatoes", "bacon", "chives" });
+        //    _repo.AddMenuItemToList(meal);
+        //}
         [TestMethod]
         public void Add_MealIsNull_ReturnFalse()
         {

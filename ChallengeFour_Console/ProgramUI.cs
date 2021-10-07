@@ -17,7 +17,7 @@ namespace ChallengeFour_Console
             Menu();
 
         }
-        //Menu
+
         private void Menu()
         {
             bool keepRunning = true;
@@ -59,6 +59,7 @@ namespace ChallengeFour_Console
                 Console.Clear();
             }
         }
+
         //Display List of All Outings
         private void DisplayAllOutings()
         {
@@ -74,6 +75,7 @@ namespace ChallengeFour_Console
             }
 
         }
+
         //Create New Outing
         private void CreateNewOuting()
         {
@@ -106,12 +108,13 @@ namespace ChallengeFour_Console
 
             _outingRepo.AddOutingToList(outing);
         }
+
         //Display Total Combined Costs
         private void DisplayTotalCombinedCosts()
         {
             Console.Clear();
             decimal totalCost =_outingRepo.AddAllOutingCosts();
-            Console.WriteLine($"Here is the total combined costs of all outings:{totalCost}\n\n");
+            Console.WriteLine($"\nThe total combined costs of all outings is: {totalCost}");
         }
 
         //Display Costs By Type
