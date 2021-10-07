@@ -82,7 +82,7 @@ namespace ChallengeFour_Console
             
             //Date of Outing
             Console.WriteLine("Enter the date of the outing (ex: 11/23/2020): ");
-            outing.DateOfEvent = DateTime.Parse(Console.ReadLine());
+            outing.DateOfEvent = Console.ReadLine();
             
             //Type of Event
             Console.WriteLine("What was the type of event? (Enter 1, 2, 3, or 4): \n" +
@@ -134,8 +134,8 @@ namespace ChallengeFour_Console
         //Seed Data
         private void SeedMenuItems()
         {
-            Outing outingExampleOne = new Outing(EventType.Golf, 30, new DateTime(2021, 5, 16), 59.99m, 1799.70m);
-            Outing outingExampleTwo = new Outing(EventType.Bowling, 40, new DateTime(2021, 10, 1), 25.99m, 1039.60m);
+            Outing outingExampleOne = new Outing(EventType.Golf, 30, "2021/ 05 / 16", 59.99m, 1799.70m);
+            Outing outingExampleTwo = new Outing(EventType.Bowling, 40, "2021/ 10/ 1", 25.99m, 1039.60m);
 
             _outingRepo.AddOutingToList(outingExampleOne);
             _outingRepo.AddOutingToList(outingExampleTwo);
