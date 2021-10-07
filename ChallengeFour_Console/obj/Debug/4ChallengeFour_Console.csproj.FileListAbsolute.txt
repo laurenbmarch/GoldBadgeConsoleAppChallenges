@@ -8,3 +8,13 @@ C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProject
 C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\ChallengeFour_Console\bin\Debug\ChallengeFour_RepositoryA.dll
 C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\ChallengeFour_Console\bin\Debug\ChallengeFour_RepositoryA.pdb
 C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\ChallengeFour_Console\obj\Debug\4ChallengeFour_Console.csproj.CopyComplete
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\ChallengeFour_Console\bin\Debug\ChallengeFour_Console.exe.config
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\ChallengeFour_Console\bin\Debug\ChallengeFour_Console.exe
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\ChallengeFour_Console\bin\Debug\ChallengeFour_Console.pdb
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\ChallengeFour_Console\bin\Debug\ChallengeFour_RepositoryA.dll
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\ChallengeFour_Console\bin\Debug\ChallengeFour_RepositoryA.pdb
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\ChallengeFour_Console\obj\Debug\4ChallengeFour_Console.csproj.AssemblyReference.cache
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\ChallengeFour_Console\obj\Debug\4ChallengeFour_Console.csproj.CoreCompileInputs.cache
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\ChallengeFour_Console\obj\Debug\4ChallengeFour_Console.csproj.CopyComplete
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\ChallengeFour_Console\obj\Debug\ChallengeFour_Console.exe
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\ChallengeFour_Console\obj\Debug\ChallengeFour_Console.pdb

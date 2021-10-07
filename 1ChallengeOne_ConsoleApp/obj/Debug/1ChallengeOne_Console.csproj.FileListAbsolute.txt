@@ -8,3 +8,13 @@ C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProject
 C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\1ChallengeOne_ConsoleApp\obj\Debug\1ChallengeOne_Console.csproj.CopyComplete
 C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\1ChallengeOne_ConsoleApp\obj\Debug\1ChallengeOne_ConsoleApp.exe
 C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeAppChallenges\1ChallengeOne_ConsoleApp\obj\Debug\1ChallengeOne_ConsoleApp.pdb
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\1ChallengeOne_ConsoleApp\bin\Debug\1ChallengeOne_ConsoleApp.exe.config
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\1ChallengeOne_ConsoleApp\bin\Debug\1ChallengeOne_ConsoleApp.exe
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\1ChallengeOne_ConsoleApp\bin\Debug\1ChallengeOne_ConsoleApp.pdb
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\1ChallengeOne_ConsoleApp\bin\Debug\1ChallengeOne_Repo.dll
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\1ChallengeOne_ConsoleApp\bin\Debug\1ChallengeOne_Repo.pdb
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\1ChallengeOne_ConsoleApp\obj\Debug\1ChallengeOne_Console.csproj.AssemblyReference.cache
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\1ChallengeOne_ConsoleApp\obj\Debug\1ChallengeOne_Console.csproj.CoreCompileInputs.cache
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\1ChallengeOne_ConsoleApp\obj\Debug\1ChallengeOne_Console.csproj.CopyComplete
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\1ChallengeOne_ConsoleApp\obj\Debug\1ChallengeOne_ConsoleApp.exe
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\1ChallengeOne_ConsoleApp\obj\Debug\1ChallengeOne_ConsoleApp.pdb

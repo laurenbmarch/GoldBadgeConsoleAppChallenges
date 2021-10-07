@@ -75,17 +75,48 @@ namespace _1ChallengeOne_ConsoleApp
             MenuItem newMenuItem = new MenuItem();
             //Meal Name
             Console.WriteLine("Enter the name of the meal you would like to add:");
-            newMenuItem.MealName = Console.ReadLine();
+            try
+            {
+                newMenuItem.MealName = Console.ReadLine();
+            }
+            catch
+            {
+                Console.WriteLine("Invalid entry.");
+            }
+            
             //Meal Price
             Console.WriteLine("Enter the price of the meal:");
-            newMenuItem.Price = decimal.Parse(Console.ReadLine());
+            try
+            {
+                newMenuItem.Price = decimal.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Invalid entry.");
+            }
+
             //Meal Description
             Console.WriteLine("Enter a description of the meal:");
-            newMenuItem.Description = Console.ReadLine();
+            try
+            {
+                newMenuItem.Description = Console.ReadLine();
+            }
+            catch
+            {
+                Console.WriteLine("Invalid entry.");
+            }
+            
             //Meal Ingredient List
             Console.WriteLine("Enter the ingredients of the meal:");
-            string newIngredients = Console.ReadLine();
-            newMenuItem.ListOfIngredientsInMeal.Add(newIngredients);
+            try
+            {
+                string newIngredients = Console.ReadLine();
+                newMenuItem.ListOfIngredientsInMeal.Add(newIngredients);
+            }
+            catch
+            {
+                Console.WriteLine("Invalid entry.");
+            }
 
             _menuRepo.AddMenuItemToList(newMenuItem);
         }
