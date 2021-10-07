@@ -15,6 +15,7 @@ namespace _1ChallengeOne_ConsoleApp
             SeedMenuItems();
             Menu();
         }
+
         //Menu
         private void Menu()
         {
@@ -53,6 +54,7 @@ namespace _1ChallengeOne_ConsoleApp
                 Console.Clear();
             }
         }
+
         //Display List of Menu Items
         private void DisplayAllMenuItems()
         {
@@ -68,6 +70,7 @@ namespace _1ChallengeOne_ConsoleApp
             }
 
         }
+       
         //Create New Menu Item
         private void CreateNewMenuItem()
         {

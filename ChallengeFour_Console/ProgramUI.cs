@@ -113,23 +113,16 @@ namespace ChallengeFour_Console
             Console.Clear();
             decimal totalCost =_outingRepo.AddAllOutingCosts();
             Console.WriteLine($"Here is the total combined costs of all outings:{totalCost}\n\n");
-
-            //Console.WriteLine("Would you like to view the combined costs by year? (yes/no):");
         }
         //Display Costs By Type
         private void DisplayCostsByType()
         {
             Console.Clear();
-            Console.WriteLine("Which type of event would you like to see total costs:\n" +
-                "1. Golf \n" +
-                "2. Bowling \n" +
-                "3. Amusement Park \n" +
-                "4. Concert");
-            int eventChoice = int.Parse(Console.ReadLine());
-            EventType typeOfEvent = (EventType)eventChoice;
-            decimal totalCostOfEventType = _outingRepo.AddCostsByType(typeOfEvent);
-            Console.WriteLine($"The total cost of {typeOfEvent} events is:{totalCostOfEventType}");
-
+            Console.WriteLine("Here are the total costs by Event Type:\n" +
+                $"1. Golf: {_outingRepo.AddCostsByType(EventType.Golf)}\n" +
+                $"2. Bowling: {_outingRepo.AddCostsByType(EventType.Bowling)}\n" +
+                $"3. Amusement Park: {_outingRepo.AddCostsByType(EventType.AmusementPark)}\n" +
+                $"4. Concert: {_outingRepo.AddCostsByType(EventType.Concert)}");
         }
         //Seed Data
         private void SeedMenuItems()

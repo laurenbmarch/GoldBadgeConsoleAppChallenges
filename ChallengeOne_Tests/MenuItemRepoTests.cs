@@ -45,7 +45,7 @@ namespace ChallengeOne_Tests
         public void GetMenuItemByName_MealDoesNotExist_ReturnNull()
         {
             //Arrange
-            MenuItem meal = new MenuItem("Avocado Toast", 3.99m, "Simple, yet protein-packed and delicious.", new List<string>() { "who wheat toast", "avocado", "sea salt" });
+            MenuItem meal = new MenuItem("Avocado Toast", 3.99m, "Simple, yet protein-packed and delicious.", new List<string>() { "whole wheat toast", "avocado", "sea salt" });
             MenuItemRepo repository = new MenuItemRepo();
             repository.AddMenuItemToList(meal);
 
@@ -56,10 +56,10 @@ namespace ChallengeOne_Tests
             Assert.IsNull(result);
         }
         [TestMethod]
-        public void GetMenuItemByName_MealDoesExist_ReturnTrue()
+        public void GetMenuItemByName_MealDoesExist_ReturnIsNotNull()
         {
             //Arrange
-            MenuItem meal = new MenuItem("Avocado Toast", 3.99m, "Simple, yet protein-packed and delicious.", new List<string>() { "who wheat toast", "avocado", "sea salt" });
+            MenuItem meal = new MenuItem("Avocado Toast", 3.99m, "Simple, yet protein-packed and delicious.", new List<string>() { "whole wheat toast", "avocado", "sea salt" });
             MenuItemRepo repository = new MenuItemRepo();
             repository.AddMenuItemToList(meal);
 
@@ -74,7 +74,7 @@ namespace ChallengeOne_Tests
         public void DeleteMeal_MealDoesNotExist_ReturnFalse()
         {
             //Arrange
-            MenuItem meal = new MenuItem("Avocado Toast", 3.99m, "Simple, yet protein-packed and delicious.", new List<string>() { "who wheat toast", "avocado", "sea salt" });
+            MenuItem meal = new MenuItem("Avocado Toast", 3.99m, "Simple, yet protein-packed and delicious.", new List<string>() { "whole wheat toast", "avocado", "sea salt" });
             MenuItemRepo repository = new MenuItemRepo();
             repository.AddMenuItemToList(meal);
 
@@ -88,7 +88,8 @@ namespace ChallengeOne_Tests
         [TestMethod]
         public void DeleteMeal_MealDoesExist_ReturnTrue()
         {
-            MenuItem meal = new MenuItem("Avocado Toast", 3.99m, "Simple, yet protein-packed and delicious.", new List<string>() { "who wheat toast", "avocado", "sea salt" });
+            //Arrange
+            MenuItem meal = new MenuItem("Avocado Toast", 3.99m, "Simple, yet protein-packed and delicious.", new List<string>() { "whole wheat toast", "avocado", "sea salt" });
             MenuItemRepo repository = new MenuItemRepo();
             repository.AddMenuItemToList(meal);
 
@@ -100,9 +101,26 @@ namespace ChallengeOne_Tests
 
         }
         [TestMethod]
-        public void GetMenuList_ListDoesNotExist_ReturnNull() //Question
+        public void GetMenuList_ListDoesExist_ReturnIsNotNull() //Question
         {
-        
+            //Arrange
+            List<MenuItem> _listOfMenuItems = new List<MenuItem>();
+
+            //Act
+            var result = _listOfMenuItems;
+            
+
+            //Assert
+            Assert.IsNotNull(result);
+        }
+        [TestMethod]
+        public void GetMenuList_ListDoesNotExist_ReturnIsNull() //Question
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
         }
 
     }
