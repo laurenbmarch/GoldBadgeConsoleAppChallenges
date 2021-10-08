@@ -2,3 +2,9 @@ C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProject
 C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\Challenge6_Console\obj\Debug\3ChallengeThree_Console.csproj.CoreCompileInputs.cache
 C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\Challenge6_Console\obj\Debug\Challenge6_Console.exe
 C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\Challenge6_Console\obj\Debug\Challenge6_Console.pdb
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\Challenge6_Console\bin\Debug\Challenge6_Console.exe.config
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\Challenge6_Console\bin\Debug\Challenge6_Console.exe
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\Challenge6_Console\bin\Debug\Challenge6_Console.pdb
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\Challenge6_Console\bin\Debug\6ChallengeSix_Repository.dll
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\Challenge6_Console\bin\Debug\6ChallengeSix_Repository.pdb
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\Challenge6_Console\obj\Debug\3ChallengeThree_Console.csproj.CopyComplete

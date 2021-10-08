@@ -10,7 +10,7 @@ namespace Challenge3_Console
     public class ProgramUI
     {
         private BadgeRepo _badgeRepo = new BadgeRepo();
-        //private Dictionary<int, Badge> _dictionaryOfBadges;
+       
 
         public void Run()
         {
@@ -113,7 +113,7 @@ namespace Challenge3_Console
 
                 if (badge != null)
                 {
-                    Console.WriteLine($"Badge Number {idNumber} has access to doors {badge.ListOfDoorNames}");
+                    Console.WriteLine($"Badge Number {idNumber} has access to doors {string.Join(",",badge.ListOfDoorNames)}");
                     Console.WriteLine("What would you like to do? (enter 1 or 2)\n" +
                         "1. Add access to a door\n" +
                         "2. Remove access to a door");
@@ -153,7 +153,7 @@ namespace Challenge3_Console
                                     Console.WriteLine("Please enter the door you would like to remove:");
                                     string doorToRemove = Console.ReadLine();
                                     badge.ListOfDoorNames.Remove(doorToRemove);
-                                    Console.WriteLine("Would you like to remove any ither doors? (yes/no)");
+                                    Console.WriteLine("Would you like to remove any other doors? (yes/no)");
                                     try
                                     {
                                         string wantsToRemoveAnotherDoor = Console.ReadLine();
@@ -187,15 +187,15 @@ namespace Challenge3_Console
             
         }
 
-        //Display Dictionary of Badges
+        //Display Dictionary of Badges //QUESTION!!
         private void ListAllBadges()
         {
             Console.Clear();
-            Dictionary<int, Badge> dictionaryOfBadgeElements = _badgeRepo.GetListOfAllBadges();
-
+            Dictionary<int, Badge> dictionaryOfBadgeElements= _badgeRepo.GetListOfAllBadges();
+            Console.WriteLine("\nHere is a list of all badges in use and their cooresponding doors of access:\n");
             foreach(KeyValuePair<int, Badge> badgeElement in dictionaryOfBadgeElements)
             {
-                Console.WriteLine("Badge ID: {0}, Door Access: {1}", badgeElement.Key, badgeElement.Value);
+                Console.WriteLine($"\tBadge ID: {badgeElement.Key}\n, \tDoor Access: {string.Join(",", badgeElement.Value.ListOfDoorNames)}\n");
             }
         }
 

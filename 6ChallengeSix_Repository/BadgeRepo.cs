@@ -14,7 +14,7 @@ namespace _3ChallengeThree_Repository
         //Create a Badge
         public bool AddBadgeToDictionary(int badgeID, Badge badge)
         {
-            if(badge == null)
+            if (badge == null)
             {
                 return false;
             }
@@ -55,8 +55,7 @@ namespace _3ChallengeThree_Repository
         //Get all Badge numbers and cooresponding door access
         public Dictionary<int, Badge> GetListOfAllBadges()
         {
-            var DictionaryOfBadges = new Dictionary<int, Badge>();
-            return DictionaryOfBadges;
+            return _dictionaryOfBadges;
 
         }
 
