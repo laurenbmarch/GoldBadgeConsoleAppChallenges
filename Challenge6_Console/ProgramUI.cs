@@ -10,14 +10,11 @@ namespace Challenge3_Console
     public class ProgramUI
     {
         private BadgeRepo _badgeRepo = new BadgeRepo();
-       
-
         public void Run()
         {
             SeedData();
             Menu();
         }
-
         private void Menu()
         {
             bool keepRunning = true;
@@ -59,7 +56,6 @@ namespace Challenge3_Console
                 Console.Clear();
             }
         }
-
         //Create New Badge
         private void AddABadge()
         {
@@ -100,7 +96,6 @@ namespace Challenge3_Console
                 Console.WriteLine("The badge could not be added to the system.");
             }
         }
-
         //Update Doors on a Badge
         private void EditABadge()
         {
@@ -113,15 +108,13 @@ namespace Challenge3_Console
 
                 if (badge != null)
                 {
-                    Console.WriteLine($"Badge Number {idNumber} has access to doors {string.Join(",",badge.ListOfDoorNames)}");
+                    Console.WriteLine($"Badge Number {idNumber} has access to doors {string.Join(",",badge.ListOfDoorNames)}\n");
                     Console.WriteLine("What would you like to do? (enter 1 or 2)\n" +
                         "1. Add access to a door\n" +
                         "2. Remove access to a door");
-
                     try
                     {
                         int userChoice = int.Parse(Console.ReadLine());
-
                         switch (userChoice)
                         {
                             case 1:
@@ -172,7 +165,6 @@ namespace Challenge3_Console
                                 Console.WriteLine("Please enter a valid selection.");
                                 break;
                         }
-
                     }
                     catch
                     {
@@ -182,12 +174,9 @@ namespace Challenge3_Console
             else
             {
                 Console.WriteLine("Could not update that Badge.");
-            }
-             
-            
+            } 
         }
-
-        //Display Dictionary of Badges //QUESTION!!
+        //Display Dictionary of Badges
         private void ListAllBadges()
         {
             Console.Clear();
@@ -195,22 +184,18 @@ namespace Challenge3_Console
             Console.WriteLine("\nHere is a list of all badges in use and their cooresponding doors of access:\n");
             foreach(KeyValuePair<int, Badge> badgeElement in dictionaryOfBadgeElements)
             {
-                Console.WriteLine($"\tBadge ID: {badgeElement.Key}\n, \tDoor Access: {string.Join(",", badgeElement.Value.ListOfDoorNames)}\n");
+                Console.WriteLine($"\tBadge ID: {badgeElement.Key}\n \tDoor Access: {string.Join(",", badgeElement.Value.ListOfDoorNames)}");
             }
         }
-
         //Seed Data
         private void SeedData()
         {
             Badge exampleBadgeOne = new Badge(1234, "Lauren March", new List<string>() { "A1", "A3", "B7" });
             Badge exampleBadgeTwo = new Badge(2244, "James March", new List<string>() { "D3", "D4", "D5" });
             Badge exampleBadgeThree = new Badge(1021, "Henry March", new List<string>() { "A1", "B2", "C3" });
-
             _badgeRepo.AddBadgeToDictionary(exampleBadgeOne.BadgeID, exampleBadgeOne);
             _badgeRepo.AddBadgeToDictionary(exampleBadgeTwo.BadgeID, exampleBadgeTwo);
             _badgeRepo.AddBadgeToDictionary(exampleBadgeThree.BadgeID, exampleBadgeThree);
-
         }
-
     }
 }

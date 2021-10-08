@@ -8,12 +8,6 @@ namespace _3ChallengeThree_Tests
     public class BadgeRepoTests
     {
         private readonly BadgeRepo _repo = new BadgeRepo();
-        [TestInitialize]
-        public void Arrange()
-        {
-            Badge badge = new Badge(4444, "Employee A", new List<string>() { "G1", "G5", "G7" });
-            _repo.AddBadgeToDictionary(badge.BadgeID,badge);
-        }
         [TestMethod] 
         public void AddBadge_BadgeIsNull_ReturnFalse()
         {
@@ -27,7 +21,6 @@ namespace _3ChallengeThree_Tests
             //Assert
             Assert.IsFalse(result);
         }
-
         [TestMethod]
         public void AddBadge_BadgeIsNotNull_ReturnTrue()
         {
@@ -41,7 +34,6 @@ namespace _3ChallengeThree_Tests
             //Assert
             Assert.IsTrue(result);
         }
-
         [TestMethod]
         public void UpdateBadge_BadgeDoesNotExist_ReturnNull()
         {
@@ -56,7 +48,6 @@ namespace _3ChallengeThree_Tests
             //Assert
             Assert.IsNull(result);
         }
-
         [TestMethod]
         public void UpdateBadge_BadgeExists_ReturnIsNotNull()
         {
@@ -70,37 +61,15 @@ namespace _3ChallengeThree_Tests
 
             //Assert
             Assert.IsNotNull(result);
-
         }
-
-        [TestMethod]
-        public void GetListOfBadges_ListDoesNotExist_ReturnIsNull()
-        {
-            //Arrange
-            Badge badge = new Badge(4445, "Employee A", new List<string>() { "G1", "G5", "G7" });
-            BadgeRepo badgeRepo = new BadgeRepo();
-            Dictionary<int, Badge> testDictionary = new Dictionary<int, Badge>();
-            testDictionary = null;
-
-            //Act
-
-            bool result = badgeRepo.GetListOfAllBadges();
-            //Assert
-            Assert.IsNull(testDictionary);         
-        }//Question
-
         [TestMethod]
         public void GetListOfBadges_ListDoesExist_ReturnIsNotNull()
         {
             //Arrange
-            Badge badge = new Badge(4445, "Employee A", new List<string>() { "G1", "G5", "G7" });
             BadgeRepo badgeRepo = new BadgeRepo();
-            Dictionary<int, Badge> testDictionary = new Dictionary<int, Badge>();
 
-            //Act
-
-
-        }//Question
-
+            //Assert
+            Assert.IsNotNull(badgeRepo.GetListOfAllBadges());
+        }
     }
 }

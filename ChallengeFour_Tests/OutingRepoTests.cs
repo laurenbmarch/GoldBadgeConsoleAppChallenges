@@ -8,30 +8,14 @@ namespace ChallengeFour_Tests
     public class OutingRepoTests
     {
         private readonly OutingRepo _repo = new OutingRepo();
-        [TestInitialize]
-        public void Arrange()
-        {
-            Outing outing = new Outing(EventType.Concert, 100, new DateTime(2021, 06, 07), 50.00m, 5000.00m);
-            _repo.AddOutingToList(outing);
-        } //Question
         [TestMethod]
-        public void GetAllOutings_ListDoesExist_ReturnIsNotNull() //Question
+        public void GetAllOutings_ListDoesExist_ReturnIsNotNull()
         {
             //Arrange
-
-            //Act
-
-            //Assert
-
-        }
-        [TestMethod]
-        public void GetAllOutings_ListDoesNotExist_ReturnIsNull() //Question
-        {
-            //Arrange
-
-            //Act
+            OutingRepo outingRepo = new OutingRepo();
 
             //Assert
+            Assert.IsNotNull(outingRepo.GetAllOutings());
         }
         [TestMethod]
         public void AddOuting_OutingIsNull_ReturnFalse()
@@ -58,35 +42,6 @@ namespace ChallengeFour_Tests
 
             //Assert
             Assert.IsTrue(result);
-        }
-        [TestMethod]
-        public void AddAllOutingCosts_SumOfCostsIsCorrect_ReturnIsEqual() //Question
-        {
-            //Arrange
-
-            //Act
-
-            //Assert
-        }
-        [TestMethod]
-        public void AddAllOutingCosts_SumOfCostsIsIncorrect_ReturnIsNotEqual() //Question
-        {
-            //Arrange
-
-            //Act
-
-            //Assert
-
-        }
-        [TestMethod]
-        public void AddCostsByType_TypeIsNull_ReturnIsNull() //Question
-        {
-
-        }
-        [TestMethod]
-        public void AddCostsByType_TypeIsNotNull_ReturnIsNotNull() //Question
-        {
-
         }
     }
 }

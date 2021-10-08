@@ -13,7 +13,6 @@ namespace _1ChallengeOne_Repo
         public decimal Price { get; set; }
         public string Description { get; set; }
         public List<string> ListOfIngredientsInMeal { get; set; } = new List<string>();
-
         public MenuItem() { }
         public MenuItem(string mealName, decimal price, string description, List<string> listOfIngredients)
         {

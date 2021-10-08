@@ -7,14 +7,7 @@ namespace ChallengeOne_Tests
     [TestClass]
     public class MenuItemRepoTests
     {
-
         private readonly MenuItemRepo _repo = new MenuItemRepo();
-        [TestInitialize]
-        public void Arrange()
-        {
-            MenuItem meal = new MenuItem("Chicken Sandwich", 5.99m, "Our chicken sandwich is full of flavor and can be grilled or fried.", new List<string>() { "potatoes", "bacon", "chives" });
-            _repo.AddMenuItemToList(meal);
-        }
         [TestMethod]
         public void Add_MealIsNull_ReturnFalse()
         {
@@ -68,7 +61,6 @@ namespace ChallengeOne_Tests
 
             //Assert
             Assert.IsNotNull(result);
-
         }
         [TestMethod]
         public void DeleteMeal_MealDoesNotExist_ReturnFalse()
@@ -83,7 +75,6 @@ namespace ChallengeOne_Tests
 
             //Assert
             Assert.IsFalse(result);
-
         }
         [TestMethod]
         public void DeleteMeal_MealDoesExist_ReturnTrue()
@@ -98,30 +89,15 @@ namespace ChallengeOne_Tests
 
             //Assert
             Assert.IsTrue(result);
-
         }
         [TestMethod]
-        public void GetMenuList_ListDoesExist_ReturnIsNotNull() //Question
+        public void GetMenuList_ListDoesExist_ReturnIsNotNull()
         {
             //Arrange
-            List<MenuItem> _listOfMenuItems = new List<MenuItem>();
-
-            //Act
-            var result = _listOfMenuItems;
-            
+            MenuItemRepo repository = new MenuItemRepo();
 
             //Assert
-            Assert.IsNotNull(result);
+            Assert.IsNotNull(repository.GetMenuList());
         }
-        [TestMethod]
-        public void GetMenuList_ListDoesNotExist_ReturnIsNull() //Question
-        {
-            //Arrange
-
-            //Act
-
-            //Assert
-        }
-
     }
 }

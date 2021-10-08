@@ -17,7 +17,6 @@ namespace ChallengeFour_Console
             Menu();
 
         }
-
         private void Menu()
         {
             bool keepRunning = true;
@@ -135,7 +134,6 @@ namespace ChallengeFour_Console
             Outing outingExampleTwo = new Outing(EventType.Bowling, 40, new DateTime(2021, 10, 1), 20.00m, 800.00m);
             Outing outingExampleThree = new Outing(EventType.AmusementPark, 10, new DateTime(2021, 03, 02), 40.00m, 400.00m);
             Outing outingExampleFour = new Outing(EventType.Concert, 30, new DateTime(2021, 08, 23), 40m, 1200m); 
-
             _outingRepo.AddOutingToList(outingExampleOne);
             _outingRepo.AddOutingToList(outingExampleTwo);
             _outingRepo.AddOutingToList(outingExampleThree);

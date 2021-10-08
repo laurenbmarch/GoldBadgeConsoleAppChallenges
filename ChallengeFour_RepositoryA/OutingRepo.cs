@@ -10,7 +10,7 @@ namespace ChallengeFour_RepositoryA
     {
         private List<Outing> _listOfOutings = new List<Outing>();
         
-        //Display List of All Outings
+        //Read -- Display List of All Outings
         public List<Outing> GetAllOutings()
         {
             return _listOfOutings;
@@ -27,14 +27,14 @@ namespace ChallengeFour_RepositoryA
             return true;
         }
         
-        //View Combined Costs of All Outings
+        //Calculate Cost of All Outings
         public decimal AddAllOutingCosts()
         {
             decimal totalOutingCosts = _listOfOutings.Sum(outing => outing.TotalCostForEvent);
             return totalOutingCosts;
         }
         
-        //View Costs of Outings By Type
+        //Cost Calculation By Outing Type
         public decimal AddCostsByType(EventType typeOfEvent)
         {
             List<Outing> listByType = new List<Outing>();

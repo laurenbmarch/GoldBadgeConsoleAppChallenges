@@ -20,7 +20,6 @@ namespace ChallengeFour_RepositoryA
         public DateTime DateOfEvent { get; set; } = new DateTime();
         public decimal CostPerPerson { get; set; }
         public decimal TotalCostForEvent { get; set; }
-
         public Outing() { }
         public Outing (EventType typeOfEvent, int numOfAttendees, DateTime eventDate, decimal costPerPerson, decimal totalCostForEvent)
         {
