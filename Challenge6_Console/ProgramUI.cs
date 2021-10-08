@@ -206,9 +206,9 @@ namespace Challenge3_Console
             Badge exampleBadgeTwo = new Badge(2244, "James March", new List<string>() { "D3", "D4", "D5" });
             Badge exampleBadgeThree = new Badge(1021, "Henry March", new List<string>() { "A1", "B2", "C3" });
 
-            _badgeRepo.AddBadgeToDictionary(1234, exampleBadgeOne);
-            _badgeRepo.AddBadgeToDictionary(2244, exampleBadgeTwo);
-            _badgeRepo.AddBadgeToDictionary(1021, exampleBadgeThree);
+            _badgeRepo.AddBadgeToDictionary(exampleBadgeOne.BadgeID, exampleBadgeOne);
+            _badgeRepo.AddBadgeToDictionary(exampleBadgeTwo.BadgeID, exampleBadgeTwo);
+            _badgeRepo.AddBadgeToDictionary(exampleBadgeThree.BadgeID, exampleBadgeThree);
 
         }
 
