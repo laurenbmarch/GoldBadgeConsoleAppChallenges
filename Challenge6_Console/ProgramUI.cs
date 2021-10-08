@@ -100,5 +100,93 @@ namespace Challenge3_Console
                 Console.WriteLine("The badge could not be added to the system.");
             }
         }
+
+        //Update Doors on a Badge
+        private void EditABadge()
+        {
+            Console.Clear();
+            Console.WriteLine("Please enter the ID Number of the badge you would like to update: ");
+            int idNumber;
+    
+                idNumber = int.Parse(Console.ReadLine());
+                Badge badge = _badgeRepo.GetBadgeByIDNumber(idNumber);
+
+                if (badge != null)
+                {
+                    Console.WriteLine($"Badge Number {idNumber} has access to doors {badge.ListOfDoorNames}");
+                    Console.WriteLine("What would you like to do? (enter 1 or 2)\n" +
+                        "1. Add access to a door\n" +
+                        "2. Remove access to a door");
+
+                    try
+                    {
+                        int userChoice = int.Parse(Console.ReadLine());
+
+                        switch (userChoice)
+                        {
+                            case 1:
+                                bool userIsNotFinishedUpdating = true;
+                                while (userIsNotFinishedUpdating)
+                                {
+                                    Console.WriteLine("Please enter the door you would like to add: ");
+                                    string newDoorName = Console.ReadLine();
+                                    badge.ListOfDoorNames.Add(newDoorName);
+                                    Console.WriteLine("Would you like to add another door? (yes/no)");
+                                    try
+                                    {
+                                        string wantsToAddAnotherDoor = Console.ReadLine();
+                                        if (wantsToAddAnotherDoor == "no")
+                                        {
+                                            userIsNotFinishedUpdating = false;
+                                        }
+                                    }
+                                    catch
+                                    {
+                                        Console.WriteLine("Invalid Selection.");
+                                    }
+                                }
+                                break;
+                            case 2:
+                                bool userIsNotFinishedRemovingDoors = true;
+                                while (userIsNotFinishedRemovingDoors)
+                                {
+                                    Console.WriteLine("Please enter the door you would like to remove:");
+                                    string doorToRemove = Console.ReadLine();
+                                    badge.ListOfDoorNames.Remove(doorToRemove);
+                                    Console.WriteLine("Would you like to remove any ither doors? (yes/no)");
+                                    try
+                                    {
+                                        string wantsToRemoveAnotherDoor = Console.ReadLine();
+                                        if (wantsToRemoveAnotherDoor == "no")
+                                        {
+                                            userIsNotFinishedRemovingDoors = false;
+                                        }
+                                    }
+                                    catch
+                                    {
+                                        Console.WriteLine("Invalid Selection.");
+                                    }
+                                }
+                                break;
+                                default:
+                                Console.WriteLine("Please enter a valid selection.");
+                                break;
+                        }
+
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Invalid Selection.");
+                    }
+                }
+            else
+            {
+                Console.WriteLine("Could not update that Badge.");
+            }
+             
+            
+        }
+
+
     }
 }

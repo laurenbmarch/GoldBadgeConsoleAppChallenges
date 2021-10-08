@@ -23,15 +23,27 @@ namespace _3ChallengeThree_Repository
         }
 
         //Update a Badge
-        public void UpdateDoors (int badgeID, Badge badge, int addOrRemove)
+        public bool UpdateDoors (int badgeID, Badge newBadge, int addOrRemove)
         {
             //Find the Badge By it's ID Number
-            var existingBadge = GetListOfDoorsByIDNumber(badgeID);
+            var existingBadge = GetBadgeByIDNumber(badgeID);
+
+            //Update the badge
+            if(existingBadge != null)
+            {
+                existingBadge.ListOfDoorNames = newBadge.ListOfDoorNames;
+                existingBadge.BadgeName = newBadge.BadgeName;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
         }
 
         //Get Badge By ID Number
-        public Badge GetListOfDoorsByIDNumber(int badgeIDNumber)
+        public Badge GetBadgeByIDNumber(int badgeIDNumber)
         {
             if( _dictionaryOfBadges.ContainsKey(badgeIDNumber))
             {

@@ -1,0 +1,6 @@
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\6ChallengeSix_Repository\bin\Debug\6ChallengeSix_Repository.dll
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\6ChallengeSix_Repository\bin\Debug\6ChallengeSix_Repository.pdb
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\6ChallengeSix_Repository\obj\Debug\3ChallengeThree_Repository.csproj.AssemblyReference.cache
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\6ChallengeSix_Repository\obj\Debug\3ChallengeThree_Repository.csproj.CoreCompileInputs.cache
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\6ChallengeSix_Repository\obj\Debug\6ChallengeSix_Repository.dll
+C:\Users\Lauren\Documents\Eleven Fifty Academy\ElevenFIftyProjects\DotNetProjects\GoldBadgeConsoleAppChallenges\6ChallengeSix_Repository\obj\Debug\6ChallengeSix_Repository.pdb
