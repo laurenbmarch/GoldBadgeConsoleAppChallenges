@@ -187,6 +187,30 @@ namespace Challenge3_Console
             
         }
 
+        //Display Dictionary of Badges
+        private void ListAllBadges()
+        {
+            Console.Clear();
+            Dictionary<int, Badge> dictionaryOfBadgeElements = _badgeRepo.GetListOfAllBadges();
+
+            foreach(KeyValuePair<int, Badge> badgeElement in dictionaryOfBadgeElements)
+            {
+                Console.WriteLine("Badge ID: {0}, Door Access: {1}", badgeElement.Key, badgeElement.Value);
+            }
+        }
+
+        //Seed Data
+        private void SeedData()
+        {
+            Badge exampleBadgeOne = new Badge(1234, "Lauren March", new List<string>() { "A1", "A3", "B7" });
+            Badge exampleBadgeTwo = new Badge(2244, "James March", new List<string>() { "D3", "D4", "D5" });
+            Badge exampleBadgeThree = new Badge(1021, "Henry March", new List<string>() { "A1", "B2", "C3" });
+
+            _badgeRepo.AddBadgeToDictionary(1234, exampleBadgeOne);
+            _badgeRepo.AddBadgeToDictionary(2244, exampleBadgeTwo);
+            _badgeRepo.AddBadgeToDictionary(1021, exampleBadgeThree);
+
+        }
 
     }
 }
