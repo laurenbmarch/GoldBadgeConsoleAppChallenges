@@ -8,9 +8,7 @@ namespace _3ChallengeThree_Repository
 {
     public class BadgeRepo
     {
-        private Dictionary<int, Badge> _dictionaryOfBadges = new Dictionary<int, Badge>();
-
-         
+        private Dictionary<int, Badge> _dictionaryOfBadges = new Dictionary<int, Badge>();    
         //Create a Badge
         public bool AddBadgeToDictionary(int badgeID, Badge badge)
         {
