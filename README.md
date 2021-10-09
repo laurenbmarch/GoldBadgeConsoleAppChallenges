@@ -1,6 +1,7 @@
+![headerphoto](gb-challenge-header-for-readme.png)
 # Gold Badge Console Application Challenges
 
-The Gold Badge Challenges are projects designed by Eleven Fifty Academy to evaluate a student's progress in the Software Development program. There are 8 challenges available, I have chosen three to complete and showcase. The challenges were completed in C# using Visual Studio Community. Each challenge is contained in a single Solution ()
+The Gold Badge Challenges are projects designed by Eleven Fifty Academy to evaluate a student's progress in the Software Development program. There are 8 challenges available, I have chosen three to complete and showcase. The challenges were completed in C# using Visual Studio Community. Each challenge is contained in a single Solution.
 
 I have completed the following challenges:
 
@@ -14,10 +15,8 @@ This challenge for the "Komodo Cafe" involved creating an application that allow
 
 By creating a "Menu Item" object, I assigned it properties and made badic CRUD operations in the "Menu Item" Repository. In the UI, the user is able to choose a selection from a menu to create, delete, and view menu items.
 
-
-
 ## Challenge Three: Komodo Insurance Badges
-
+This challenge for "Komodo Insurance" involved creating an application for their Security Admin to  
 ## Challenge Four: Komody Comapny Outings
 
 ## What's Next?
