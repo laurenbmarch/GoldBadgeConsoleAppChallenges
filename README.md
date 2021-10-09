@@ -20,7 +20,7 @@ This challenge for "Komodo Insurance" involved creating an application for their
 
 I first created a "Badge" object and assigned it properties: Id number, the employee to whom it belonged, and a list of door names to which it had access. By creating a dictionary collection type, I was able to store each badge "element", with the badge ID number as the key and the badge object as the value. In the UI, the Admin is able to choose a menu option to add a new badge, edit an existing badge (which includes options to either add or remove access to a door), and see the whole collection of badges and their cooresponding doors of access.
 
-## :ferris wheel: Challenge Four: Komodo Company Outings
+## :ferris_wheel: Challenge Four: Komodo Company Outings
 This challenge involved creating an application for "Komodo" as a way to view and manage the spending on company outings. The company needed to view a list of all of the company outings, the cost of all of the outings together, as well as the costs of the outings by type (golf, bowling, amusement park, or concert).
 
 I created an "Outing" object and assigned it properties of event type, number of people that attended, date of the event, total cost per person for the event, and total cost of the event. I had the program set the total cost of the event equal to the number of people attending multiplied by the cost of the event per person, but, if needed, this could be adjusted in case there were additional costs that would contribute to the toal cost of the event.
