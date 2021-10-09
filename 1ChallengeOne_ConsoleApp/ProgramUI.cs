@@ -22,6 +22,7 @@ namespace _1ChallengeOne_ConsoleApp
             bool keepRunning = true;
             while (keepRunning)
             {
+                Console.WriteLine("Welcome to Komodo Cafe!");
                 Console.WriteLine("Select an option: \n" +
                     "\t1. View All Menu Items \n" +
                     "\t2. Create a New Menu Item \n" +

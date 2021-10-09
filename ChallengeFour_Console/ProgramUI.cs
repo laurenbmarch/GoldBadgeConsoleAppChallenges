@@ -22,6 +22,7 @@ namespace ChallengeFour_Console
             bool keepRunning = true;
             while (keepRunning)
             {
+                Console.WriteLine("Welcome Komodo Admin!");
                 Console.WriteLine("Select an option: \n" +
                     "\t1. View All Outings \n" +
                     "\t2. Add A New Outing \n" +

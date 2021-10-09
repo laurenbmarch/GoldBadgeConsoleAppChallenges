@@ -18,17 +18,17 @@ By creating a "Menu Item" object, I assigned it properties and made badic CRUD o
 ## :police_officer: Challenge Three: Komodo Insurance Badges
 This challenge for "Komodo Insurance" involved creating an application for their Security Admin to maintain details about employee badge information. The Admin needed to be able to create a new employee badge, update the doors to which it has access, and see a list of all company badges and their coorresponding doors of access. 
 
-I first created a "Badge" object and assigned it properties: Id number, the employee to whom it belonged, and a list of door names to which it had access. By creating a dictionary collection type, I was able to store each badge "element", with the badge ID number as the key and the badge object as the value. In the UI, the Admin is able to choose a menu option to add a new badge, edit an existing badge (which includes options to either add or remove access to a door), and see the whole collection of badges and their cooresponding doors of access.
+I first created a "Badge" object and assigned it properties: ID number, the employee to whom it belonged, and a list of door names to which it had access. By creating a dictionary collection type, I was able to store each badge "element", with the badge ID number as the key and the badge object as the value. In the UI, the Admin is able to choose a menu option to add a new badge, edit an existing badge (which includes options to either add or remove access to a door), and see the whole collection of badges and their cooresponding doors of access.
 
 ## :ferris_wheel: Challenge Four: Komodo Company Outings
-This challenge involved creating an application for "Komodo" as a way to view and manage the spending on company outings. The company needed to view a list of all of the company outings, the cost of all of the outings together, as well as the costs of the outings by type (golf, bowling, amusement park, or concert).
+This challenge involved creating an application for "Komodo" as a way to view and manage the spending on company outings. The company needed to view a list of all of the company outings, the cost of all of the outings combined, as well as the costs of the outings by type (golf, bowling, amusement park, or concert).
 
 I created an "Outing" object and assigned it properties of event type, number of people that attended, date of the event, total cost per person for the event, and total cost of the event. I had the program set the total cost of the event equal to the number of people attending multiplied by the cost of the event per person, but, if needed, this could be adjusted in case there were additional costs that would contribute to the toal cost of the event.
 
 In the UI, the user is able to choose a selection from a menu to view all of the outings, add a new outing, and calculate costs by outing type or by all outings combined.
 
 ## :bulb: What Did I Learn?
-This project allowed multiple areas of growth for me, especially with the following:
+This project allowed multiple areas of growth for me, especially in the following areas:
 * **Dictionaries** - I didn't have much experience before this project in creating and utilizing a dictionary collection type in a project. This was a great opportunity for me to research and learn more about this collection type. I now know a lot more about dictionaries and how they can be very useful.
 * **Unit Testing** - This was another area where I had very little experience and was excited to learn more. I learned how to test different methods and learned how useful testing can be especially as your project grows in size.
 * **Repository Pattern** - Practice makes perfect! These three challenges gave me more exposure to creating class objects and repositories and I can say that I am more confident in creating these types of applications after completing this project.
@@ -40,4 +40,4 @@ I would also like to embark on the other 5 challenges to see how much progress I
 
 
 ### :computer: Eleven Fifty Academy
-I would not be this far along in my coding journey without Elven Fifty Academy. To learn more about thim click here: [Eleven Fifty Academy](https://elevenfifty.org/).
+I would not be this far along in my coding journey without Eleven Fifty Academy. To learn more about them click here: [Eleven Fifty Academy](https://elevenfifty.org/).

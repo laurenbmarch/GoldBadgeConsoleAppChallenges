@@ -20,6 +20,7 @@ namespace Challenge3_Console
             bool keepRunning = true;
             while(keepRunning)
             {
+                Console.WriteLine("Welcome Komodo Insurance Admin!");
                 Console.WriteLine("Select a menu option:\n" +
                     "\t1. Add a Badge\n" +
                     "\t2. Edit a Badge\n" +
